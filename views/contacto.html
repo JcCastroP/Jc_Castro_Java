@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Contacto</title>
+    
+    <!--Links-->
+    <link rel="stylesheet" href=".././css/estilos.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+
+    <!--scripts-->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+    <script src=".././js/mapa.js"></script>
+</head>
+
+<body>
+    <!--MENU-->
+
+    <!--contenedor menu-->
+    <div class="contenedormenu">
+
+        <!--logo-->
+        <div>
+            <a href=".././index.html"><img src=".././images/LogoJCC.png" alt="logo isometrico JCC" height="300"
+                    width="140"></a>
+        </div>
+
+        <!--navegador-->
+        <nav>
+            <ul>
+                <li><a href=".././views/galeria.html">Portafolio</a></li>
+                <li><a href=".././views/presupuesto.html">Presupuesto</a></li>
+                <li><a href=".././views/contacto.html" class="indicador">Contacto</a></li>
+            </ul>
+        </nav>
+        <!--copy/marca/cierre-->
+        <div>
+            <p>JCC © 2025</p>
+        </div>
+    </div>
+
+    <section class="contacto-caja">
+        <h1>CONTACTO</h1>
+
+        <div>
+            <h2>Nuestra Ubicación</h2>
+            <p>Dirección: Calle Central 391, Madrid, España</p>
+            <p>Teléfono: +635 123 654</p>
+            <p>Correo Electrónico: contacto@jcc.com</p>
+        </div>
+        <div>
+            <h2>Ubicación y Cómo Llegar</h2>
+            <div id="map"></div>
+            <button onclick="getUserLocation()">Calcular Ruta</button>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="lista-uno">
+            <h3>JCC | Jose Carlos Castro</h3>
+            <p>Diseñador y desarrollador enfocado en crear soluciones digitales y de comunicación.</p>
+        </div>
+        <div class="lista-dos">
+            <h3>Enlaces Rápidos</h3>
+            <ul>
+                <li><a href="#">Behance</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="lista-tres">
+            <h3>Contacto</h3>
+            <ul>
+                <li>Número: 987654312</li>
+                <li>Correo Electrónico: jccaspet@gmail.com</li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
